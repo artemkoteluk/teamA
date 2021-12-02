@@ -344,7 +344,9 @@ export class DashboardComponent implements OnInit {
       ]
     }
   ];
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

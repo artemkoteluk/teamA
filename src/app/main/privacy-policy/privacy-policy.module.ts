@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {PrivacyPolicyComponent} from "./privacy-policy.component";
 import {MatIconModule} from "@angular/material/icon";
@@ -23,4 +23,5 @@ const routes: Routes = [
     NgbModule
   ]
 })
-export class PrivacyPolicyModule { }
+export class PrivacyPolicyModule {
+}

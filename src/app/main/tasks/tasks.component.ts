@@ -9,13 +9,15 @@ import {MatSort} from "@angular/material/sort";
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
-export class TasksComponent implements AfterViewInit  {
-  displayedColumns: string[] = ['check','name', 'percentage', 'user', 'date', 'owner', 'status', 'actions'];
+export class TasksComponent implements AfterViewInit {
+  displayedColumns: string[] = ['check', 'name', 'percentage', 'user', 'date', 'owner', 'status', 'actions'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
   @ViewChild(MatSort) sort: MatSort | undefined;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngAfterViewInit() {
     // @ts-ignore
@@ -25,6 +27,7 @@ export class TasksComponent implements AfterViewInit  {
   }
 
 }
+
 export interface PeriodicElement {
   name: string;
   percentage: number;

@@ -1,35 +1,43 @@
-.bumper{
+.bumper {
   padding: 4%;
   background-color: #262626;
 }
-.bumper img{
+
+.bumper img {
   position: relative;
   left: 40%;
 }
-span{
+
+span {
   border-bottom: 1px solid lightgray;
   margin: 3%;
 }
+
 label:after {
   content: " *";
   color: #df2c2c;
   font-style: oblique;
 }
-.colp{
+
+.colp {
   color: #999999;
 }
-.colp2{
+
+.colp2 {
   text-decoration-color: #17b200;
 }
-.form-control{
+
+.form-control {
   width: 100%;
 }
-.card-body{
+
+.card-body {
   margin: 0 12% 2% 12%;
 }
-.bcolor{
+
+.bcolor {
   color: white;
-  background-color:#82b440;
+  background-color: #82b440;
   border: none;
   border-radius: 4px;
   margin-top: 16px !important;
@@ -39,7 +47,8 @@ label:after {
   width: 100%;
   padding-bottom: 4%;
 }
-body{
-  background:red;
+
+body {
+  background: red;
   background: rgba(0, 0, 0, 0.34);
 }

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {CompaniesComponent} from "./companies.component";
 import {MatTableModule} from "@angular/material/table";
@@ -10,7 +10,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 
-const routes: Routes =[
+const routes: Routes = [
   {
     path: '',
     component: CompaniesComponent
@@ -19,16 +19,17 @@ const routes: Routes =[
 
 @NgModule({
   declarations: [CompaniesComponent],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        MatTableModule,
-        MatMenuModule,
-        MatButtonModule,
-        MatIconModule,
-        MatPaginatorModule,
-        MatSortModule,
-        MatCheckboxModule,
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    MatTableModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCheckboxModule,
+  ]
 })
-export class CompaniesModule { }
+export class CompaniesModule {
+}

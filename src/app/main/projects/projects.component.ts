@@ -9,7 +9,7 @@ import {MatSort} from "@angular/material/sort";
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements AfterViewInit {
-  displayedColumns: string[] = ['check','name', 'img', 'status', 'user', 'category', 'project', 'icon','actions'];
+  displayedColumns: string[] = ['check', 'name', 'img', 'status', 'user', 'category', 'project', 'icon', 'actions'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
@@ -28,6 +28,7 @@ export class ProjectsComponent implements AfterViewInit {
   }
 
 }
+
 export interface PeriodicElement {
   name: string;
   img: string;
@@ -39,11 +40,67 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'Astronaut', img: 'assets/images/avatar.jpeg', status: 'In Progress', user: 'Mary B.', category: '-', project: '03-Jun-20 1:14 AM', icon: 'star'},
-  {name: 'Barcelona', img: 'assets/images/avatar.jpeg', status: 'In Progress', user: 'Artem K.', category: '-', project: '03-Jun-20 1:14 AM', icon: 'star'},
-  {name: 'Casanova', img: 'assets/images/avatar.jpeg', status: 'In Progress', user: 'Shakhov D.', category: 'Phone call', project: '03-Jun-20 1:14 AM', icon: 'star'},
-  {name: 'Charming', img: 'assets/images/avatar.jpeg', status: 'In Progress', user: 'Melnik D.', category: 'Meeting', project: '03-Jun-20 1:14 AM', icon: 'star'},
-  {name: 'Fireball', img: 'assets/images/avatar.jpeg', status: 'In Progress', user: 'Borov N.', category: 'Follow', project: '03-Jun-20 1:14 AM', icon: 'star'},
-  {name: 'Gray', img: 'assets/images/avatar.jpeg', status: 'In Progress', user: 'Konovalov K.', category: 'Email', project: '03-Jun-20 1:14 AM', icon: 'star'},
-  {name: 'Panthers', img: 'assets/images/avatar.jpeg', status: 'In Progress', user: 'Trukhmanov T.', category: '-', project: '03-Jun-20 1:14 AM', icon: 'star'},
+  {
+    name: 'Astronaut',
+    img: 'assets/images/avatar.jpeg',
+    status: 'In Progress',
+    user: 'Mary B.',
+    category: '-',
+    project: '03-Jun-20 1:14 AM',
+    icon: 'star'
+  },
+  {
+    name: 'Barcelona',
+    img: 'assets/images/avatar.jpeg',
+    status: 'In Progress',
+    user: 'Artem K.',
+    category: '-',
+    project: '03-Jun-20 1:14 AM',
+    icon: 'star'
+  },
+  {
+    name: 'Casanova',
+    img: 'assets/images/avatar.jpeg',
+    status: 'In Progress',
+    user: 'Shakhov D.',
+    category: 'Phone call',
+    project: '03-Jun-20 1:14 AM',
+    icon: 'star'
+  },
+  {
+    name: 'Charming',
+    img: 'assets/images/avatar.jpeg',
+    status: 'In Progress',
+    user: 'Melnik D.',
+    category: 'Meeting',
+    project: '03-Jun-20 1:14 AM',
+    icon: 'star'
+  },
+  {
+    name: 'Fireball',
+    img: 'assets/images/avatar.jpeg',
+    status: 'In Progress',
+    user: 'Borov N.',
+    category: 'Follow',
+    project: '03-Jun-20 1:14 AM',
+    icon: 'star'
+  },
+  {
+    name: 'Gray',
+    img: 'assets/images/avatar.jpeg',
+    status: 'In Progress',
+    user: 'Konovalov K.',
+    category: 'Email',
+    project: '03-Jun-20 1:14 AM',
+    icon: 'star'
+  },
+  {
+    name: 'Panthers',
+    img: 'assets/images/avatar.jpeg',
+    status: 'In Progress',
+    user: 'Trukhmanov T.',
+    category: '-',
+    project: '03-Jun-20 1:14 AM',
+    icon: 'star'
+  },
 ];

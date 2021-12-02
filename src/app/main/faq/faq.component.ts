@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -55,7 +55,9 @@ export class FaqComponent implements OnInit {
         '        raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.'
     }
   ];
-  constructor(private router: Router) { }
+
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
   }

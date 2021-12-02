@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {ContactsComponent} from "./contacts.component";
 import {MatTableModule} from "@angular/material/table";
@@ -19,16 +19,17 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [ContactsComponent],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        MatTableModule,
-        MatMenuModule,
-        MatIconModule,
-        MatButtonModule,
-        MatPaginatorModule,
-        MatSortModule,
-        MatCheckboxModule,
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    MatTableModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCheckboxModule,
+  ]
 })
-export class ContactsModule { }
+export class ContactsModule {
+}

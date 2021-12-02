@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {DashboardComponent} from "../dashboard/dashboard.component";
 import {TasksComponent} from "./tasks.component";
@@ -20,16 +20,17 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [TasksComponent],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        MatButtonModule,
-        MatMenuModule,
-        MatIconModule,
-        MatTableModule,
-        MatPaginatorModule,
-        MatSortModule,
-        MatCheckboxModule,
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCheckboxModule,
+  ]
 })
-export class TasksModule { }
+export class TasksModule {
+}

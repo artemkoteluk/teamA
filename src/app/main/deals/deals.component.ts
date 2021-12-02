@@ -9,7 +9,7 @@ import {MatSort} from "@angular/material/sort";
   styleUrls: ['./deals.component.css']
 })
 export class DealsComponent implements AfterViewInit {
-  displayedColumns: string[] = ['check','subject', 'deal', 'phone', 'email', 'contact', 'company', 'pipelines', 'actions'];
+  displayedColumns: string[] = ['check', 'subject', 'deal', 'phone', 'email', 'contact', 'company', 'pipelines', 'actions'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
@@ -37,11 +37,67 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {subject: 'Call', deal: 'Ansanio tech', phone: 9874565464, email: 'anson@gmail.com', contact: 'Cravo Ansanio', company: 'Umbrella', pipelines: [true, false,true,true,false,false,]},
-  {subject: 'Phone', deal: 'Fendelo', phone: 9874565464, email: 'williams@gmail.com', contact: 'Williams', company: 'Umbrella', pipelines: [true, false,true,true,false,false,]},
-  {subject: 'Lunch', deal: 'Bensolet', phone: 9874565464, email: 'john@gmail.com', contact: 'John', company: 'Umbrella', pipelines: [true, false,true,true,false,false,]},
-  {subject: 'Call', deal: 'Ansanio tech', phone: 9874565464, email: 'carvo@gmail.com', contact: 'Cravo', company: 'Umbrella', pipelines: [true, false,true,true,false,false,]},
-  {subject: 'Lesson', deal: 'Bensolet', phone: 9874565464, email: 'williams@gmail.com', contact: 'Williams', company: 'Umbrella', pipelines: [true, false,true,true,false,false,]},
-  {subject: 'Lesson', deal: 'Something', phone: 9874565464, email: 'williams@gmail.com', contact: 'Williams', company: 'Umbrella', pipelines: [true, false,true,true,false,false,]},
-  {subject: 'Phone', deal: 'Fendelo', phone: 9874565464, email: 'john@gmail.com', contact: 'John Doe', company: 'Umbrella', pipelines: [true, false,true,true,false,false,]},
+  {
+    subject: 'Call',
+    deal: 'Ansanio tech',
+    phone: 9874565464,
+    email: 'anson@gmail.com',
+    contact: 'Cravo Ansanio',
+    company: 'Umbrella',
+    pipelines: [true, false, true, true, false, false,]
+  },
+  {
+    subject: 'Phone',
+    deal: 'Fendelo',
+    phone: 9874565464,
+    email: 'williams@gmail.com',
+    contact: 'Williams',
+    company: 'Umbrella',
+    pipelines: [true, false, true, true, false, false,]
+  },
+  {
+    subject: 'Lunch',
+    deal: 'Bensolet',
+    phone: 9874565464,
+    email: 'john@gmail.com',
+    contact: 'John',
+    company: 'Umbrella',
+    pipelines: [true, false, true, true, false, false,]
+  },
+  {
+    subject: 'Call',
+    deal: 'Ansanio tech',
+    phone: 9874565464,
+    email: 'carvo@gmail.com',
+    contact: 'Cravo',
+    company: 'Umbrella',
+    pipelines: [true, false, true, true, false, false,]
+  },
+  {
+    subject: 'Lesson',
+    deal: 'Bensolet',
+    phone: 9874565464,
+    email: 'williams@gmail.com',
+    contact: 'Williams',
+    company: 'Umbrella',
+    pipelines: [true, false, true, true, false, false,]
+  },
+  {
+    subject: 'Lesson',
+    deal: 'Something',
+    phone: 9874565464,
+    email: 'williams@gmail.com',
+    contact: 'Williams',
+    company: 'Umbrella',
+    pipelines: [true, false, true, true, false, false,]
+  },
+  {
+    subject: 'Phone',
+    deal: 'Fendelo',
+    phone: 9874565464,
+    email: 'john@gmail.com',
+    contact: 'John Doe',
+    company: 'Umbrella',
+    pipelines: [true, false, true, true, false, false,]
+  },
 ];

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {DealsComponent} from "./deals.component";
 import {MatPaginatorModule} from "@angular/material/paginator";
@@ -31,4 +31,5 @@ const routes: Routes = [
     MatCheckboxModule
   ]
 })
-export class DealsModule { }
+export class DealsModule {
+}
