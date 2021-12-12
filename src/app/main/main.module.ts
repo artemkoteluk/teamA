@@ -77,6 +77,14 @@ const routes: Routes = [
         path: 'form-mask',
         loadChildren: () => import('./form-mask/form-mask.module').then(m => m.FormMaskModule)
       },
+      {
+        path: 'vertical-form',
+        loadChildren: () => import('./vertical-form/vertical-form.module').then(m => m.VerticalFormModule)
+      },
+      {
+        path: 'horizontal-form',
+        loadChildren: () => import('./horizontal-form/horizontal-form.module').then(m => m.HorizontalFormModule)
+      },
     ]
   },
 ]
