@@ -69,6 +69,14 @@ const routes: Routes = [
         path: 'basic-tables',
         loadChildren: () => import('./basic-tables/basic-tables.module').then(m => m.BasicTablesModule)
       },
+      {
+        path: 'basic-inputs',
+        loadChildren: () => import('./basic-inputs/basic-inputs.module').then(m => m.BasicInputsModule)
+      },
+      {
+        path: 'form-mask',
+        loadChildren: () => import('./form-mask/form-mask.module').then(m => m.FormMaskModule)
+      },
     ]
   },
 ]
