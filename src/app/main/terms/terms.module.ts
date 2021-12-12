@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {TermsComponent} from "./terms.component";
 import {MatIconModule} from "@angular/material/icon";
@@ -21,4 +21,5 @@ const routes: Routes = [
     MatCardModule,
   ]
 })
-export class TermsModule { }
+export class TermsModule {
+}

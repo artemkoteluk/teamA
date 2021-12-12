@@ -9,7 +9,7 @@ import {MatSort} from "@angular/material/sort";
   styleUrls: ['./activities.component.css']
 })
 export class ActivitiesComponent implements AfterViewInit {
-  displayedColumns: string[] = ['check','subject', 'company_deal', 'contact', 'email', 'phone', 'company','actions'];
+  displayedColumns: string[] = ['check', 'subject', 'company_deal', 'contact', 'email', 'phone', 'company', 'actions'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
@@ -28,6 +28,7 @@ export class ActivitiesComponent implements AfterViewInit {
   }
 
 }
+
 export interface PeriodicElement {
   subject: string;
   company_deal: string;
@@ -38,11 +39,60 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {subject: 'Call', company_deal: 'Ansanio tech', contact: 'Rik', email: 'company@gmail.com', phone: 9874565464, company: 'Umbrella'},
-  {subject: 'Phone', company_deal: 'Feneldo', contact: 'John Doe', email: 'company@gmail.com', phone: 9874565464, company: 'Soylent Corp'},
-  {subject: 'Lunch', company_deal: 'Bensolet', contact: 'Cravo Ansanio', email: 'company@gmail.com', phone: 9874565464, company: 'Acme'},
-  {subject: 'Phone', company_deal: 'Ansanio tech', contact: 'Williams', email: 'company@gmail.com', phone: 9874565464, company: 'Tesla'},
-  {subject: 'Lesson', company_deal: 'Feneldo', contact: 'Mag', email: 'company@gmail.com', phone: 9874565464, company: 'ItStep'},
-  {subject: 'Call', company_deal: 'Feneldo', contact: 'Williams', email: 'company@gmail.com', phone: 9874565464, company: 'Samsung'},
-  {subject: 'Meet', company_deal: 'Bensolet', contact: 'Pety', email: 'company@gmail.com', phone: 9874565464, company: 'Apple'},
+  {
+    subject: 'Call',
+    company_deal: 'Ansanio tech',
+    contact: 'Rik',
+    email: 'company@gmail.com',
+    phone: 9874565464,
+    company: 'Umbrella'
+  },
+  {
+    subject: 'Phone',
+    company_deal: 'Feneldo',
+    contact: 'John Doe',
+    email: 'company@gmail.com',
+    phone: 9874565464,
+    company: 'Soylent Corp'
+  },
+  {
+    subject: 'Lunch',
+    company_deal: 'Bensolet',
+    contact: 'Cravo Ansanio',
+    email: 'company@gmail.com',
+    phone: 9874565464,
+    company: 'Acme'
+  },
+  {
+    subject: 'Phone',
+    company_deal: 'Ansanio tech',
+    contact: 'Williams',
+    email: 'company@gmail.com',
+    phone: 9874565464,
+    company: 'Tesla'
+  },
+  {
+    subject: 'Lesson',
+    company_deal: 'Feneldo',
+    contact: 'Mag',
+    email: 'company@gmail.com',
+    phone: 9874565464,
+    company: 'ItStep'
+  },
+  {
+    subject: 'Call',
+    company_deal: 'Feneldo',
+    contact: 'Williams',
+    email: 'company@gmail.com',
+    phone: 9874565464,
+    company: 'Samsung'
+  },
+  {
+    subject: 'Meet',
+    company_deal: 'Bensolet',
+    contact: 'Pety',
+    email: 'company@gmail.com',
+    phone: 9874565464,
+    company: 'Apple'
+  },
 ];

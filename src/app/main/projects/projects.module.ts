@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {ProjectsComponent} from "./projects.component";
 import {RouterModule, Routes} from "@angular/router";
 import {MatPaginatorModule} from "@angular/material/paginator";
@@ -10,7 +10,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSortModule} from "@angular/material/sort";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 
-const routes: Routes =[
+const routes: Routes = [
   {
     path: '',
     component: ProjectsComponent
@@ -31,4 +31,5 @@ const routes: Routes =[
     MatCheckboxModule
   ]
 })
-export class ProjectsModule { }
+export class ProjectsModule {
+}

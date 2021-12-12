@@ -1,9 +1,10 @@
-.page-content{
+.page-content {
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-.page-header{
+
+.page-header {
   width: 100%;
 }
 
@@ -14,15 +15,18 @@
   text-align: center;
   width: 100%;
 }
+
 .error-box h1 {
   color: #9a55ff;
   font-size: 10em;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   margin-top: 0;
   font-weight: 500;
 }
+
 h1 {
   display: block;
   font-size: 2em;
@@ -32,15 +36,18 @@ h1 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -50,9 +57,11 @@ h1, h2, h3, h4, h5, h6 {
   -moz-osx-font-smoothing: grayscale;
   -moz-background-image: url("https://image.flaticon.com/icons/png/512/63/63436.png");
 }
+
 .fa-warning:before {
   content: "\f071";
 }
+
 .error-box .btn {
   border-radius: 50px;
   font-size: 18px;
@@ -60,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 200px;
   padding: 10px 20px;
 }
+
 .btn-primary {
   background: linear-gradient(
     135deg, #667eea 0%, #764ba2 100%) !important;

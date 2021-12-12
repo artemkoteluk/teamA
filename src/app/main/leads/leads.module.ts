@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {LeadsComponent} from "./leads.component";
 import {MatPaginatorModule} from "@angular/material/paginator";
@@ -10,7 +10,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSortModule} from "@angular/material/sort";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 
-const routes : Routes =[
+const routes: Routes = [
   {
     path: '',
     component: LeadsComponent,
@@ -19,16 +19,17 @@ const routes : Routes =[
 
 @NgModule({
   declarations: [LeadsComponent],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        MatPaginatorModule,
-        MatTableModule,
-        MatButtonModule,
-        MatMenuModule,
-        MatIconModule,
-        MatSortModule,
-        MatCheckboxModule
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    MatPaginatorModule,
+    MatTableModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule,
+    MatSortModule,
+    MatCheckboxModule
+  ]
 })
-export class LeadsModule { }
+export class LeadsModule {
+}

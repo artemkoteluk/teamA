@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {ActivitiesComponent} from "./activities.component";
 import {MatIconModule} from "@angular/material/icon";
@@ -31,4 +31,5 @@ const routes: Routes = [
     MatPaginatorModule
   ]
 })
-export class ActivitiesModule { }
+export class ActivitiesModule {
+}

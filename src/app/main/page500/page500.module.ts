@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {Page500Component} from "./page500.component";
 import {RouterModule, Routes} from "@angular/router";
 import {MatIconModule} from "@angular/material/icon";
@@ -19,4 +19,5 @@ const routes: Routes = [
     MatIconModule,
   ]
 })
-export class Page500Module { }
+export class Page500Module {
+}

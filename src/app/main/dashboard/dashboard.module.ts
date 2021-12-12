@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {DashboardComponent} from "./dashboard.component";
 import {NgxChartsModule} from "@swimlane/ngx-charts";
@@ -14,11 +14,12 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [DashboardComponent],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        NgxChartsModule,
-        MatIconModule,
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    NgxChartsModule,
+    MatIconModule,
+  ]
 })
-export class DashboardModule { }
+export class DashboardModule {
+}
