@@ -69,6 +69,10 @@ const routes: Routes = [
         path: 'basic-tables',
         loadChildren: () => import('./basic-tables/basic-tables.module').then(m=>m.BasicTablesModule)
       },
+      {
+        path: 'components',
+        loadChildren: () => import('./components/components.module').then(m=>m.ComponentsModule)
+      }
     ]
   },
 ]
