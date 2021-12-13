@@ -88,4 +88,20 @@
       height: 70%;
     }
   }
+  .row{
+    margin: 10px 0;
+  }
+  mat-card{
+    width: 100%;
+  }
+  tabs-section{
+    mat-card{
+      height: 100%;
+    }
+  }
+  .tab-pane{
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+  }
 }
