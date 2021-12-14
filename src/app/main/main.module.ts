@@ -85,6 +85,18 @@ const routes: Routes = [
         path: 'horizontal-form',
         loadChildren: () => import('./horizontal-form/horizontal-form.module').then(m => m.HorizontalFormModule)
       },
+      {
+        path: 'form-validation',
+        loadChildren: () => import('./form-validation/form-validation.module').then(m => m.FormValidationModule)
+      },
+      {
+        path: 'mail',
+        loadChildren: () => import('./mail/mail.module').then(m => m.MailModule)
+      },
+      {
+        path: 'reports',
+        loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)
+      },
     ]
   },
 ]
