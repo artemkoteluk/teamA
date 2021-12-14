@@ -22,7 +22,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     loadChildren: () => import('./main/main.module').then(m => m.MainModule),
   },
-  {path: '', redirectTo: 'main', pathMatch: 'full'}
+  {path: '', redirectTo: 'login', pathMatch: 'full'}
 ]
 
 @NgModule({
