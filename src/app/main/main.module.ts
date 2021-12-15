@@ -97,6 +97,14 @@ const routes: Routes = [
         path: 'reports',
         loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)
       },
+      {
+        path: 'components',
+        loadChildren: () => import('./components/components.module').then(m => m.ComponentsModule)
+      },
+      {
+        path: 'form-input',
+        loadChildren: () => import('./form-input/form-input.module').then(m => m.FormInputModule)
+      },
     ]
   },
 ]
